@@ -8,6 +8,9 @@ function moveright(){
 var element= document.getElementById('main');
 element.innerHTML='hi bro';
 var img = document.getElementById('imgg');
+element.onClick = function(){
+    element.style.marginLeft= '200px';
+}
 img.onClick = function() {
     //var interval = setInterval(moveright,100);
     img.style.marginLeft = '1000px';
