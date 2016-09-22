@@ -16,6 +16,17 @@ var articleone ={
                 helooo
             </p>`
 }
+var articletwo ={
+    title:" Article on |humraz2",
+    heading: "article one2",
+    date:"sep 352",
+    content: `<p>
+                heloo heleoeolee2222lle
+            </p>
+            <p>
+                helooo22222
+            </p>`
+}
 function createtemplate(data){
     var title = data.title;
     var date = data.date;
@@ -59,7 +70,7 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
-  res.send("Article two requested is served here");
+  res.send(createtemplate(articletwo));
 });
 app.get('/article-three', function (req, res) {
   res.send("Article three requested is served here");
