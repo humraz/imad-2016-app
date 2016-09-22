@@ -48,11 +48,12 @@ var htmlTemplate =`
         </div>
     </body>
 </html>
+`;
+return htmltemplate;
 
 
 
-
-`}
+}
 app.get('/article-one', function (req, res) {
   res.send(createtemplate(articleone));
 });
