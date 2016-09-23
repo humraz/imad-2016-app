@@ -1,17 +1,12 @@
-console.log('Loaded!');
-
-var marginleft=0;
-function moveright(){
-    marginleft= marginleft +10;
-    img.style.marginLeft= marginleft+'px';
+var request=new XMLHttpRequest();
+var counter=10;
+request.onreadystatechange= function(){
+    if(request.readystatechange==XMLHttpRequest.DONE)
+    {if(request.status==200)
+    {
+     
+      
+    }
+        
+    }
 }
-var element= document.getElementById('main');
-element.innerHTML='hi bro';
-var img = document.getElementById('imgg');
-element.onclick = function(){
-    element.style.marginLeft= '200px';
-}
-img.onclick = function() {
-    //var interval = setInterval(moveright,100);
-    img.style.marginLeft = '1000px';
-};
