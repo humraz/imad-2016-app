@@ -18,6 +18,6 @@ butto.onclick= function(){
         
     }
 };
-request.OPEN('GET', 'http://humraz.imad.hasura-app.io/counter', true);
+request.open('GET', 'http://humraz.imad.hasura-app.io/counter', true);
 request.send(null);
 };
