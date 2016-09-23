@@ -9,4 +9,12 @@ request.onreadystatechange= function(){
     }
         
     }
+};
+
+var butto= document.getElementById('butt');
+butto.onclick= function(){
+    
+    counter=counter+1;
+    var span= document.getElementById('number');
+    span.innerHTML=counter.toString();
 }
