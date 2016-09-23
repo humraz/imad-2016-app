@@ -8,8 +8,8 @@ butto.onclick= function(){
    // counter=counter+1;
     //
    request.onreadystatechange= function(){
-    if(request.readystate==XMLHttpRequest.DONE)
-    {if(request.status==200)
+    if(request.readystate===XMLHttpRequest.DONE)
+    {if(request.status===200)
     {
      var counter= request.responseText;
       var span= document.getElementById('number');
@@ -18,6 +18,6 @@ butto.onclick= function(){
         
     }
 };
-request.OPEN("GET", "http://humraz.imad.hasura-app.io/counter", true);
+request.OPEN('GET', 'http://humraz.imad.hasura-app.io/counter', true);
 request.send(null);
 };
