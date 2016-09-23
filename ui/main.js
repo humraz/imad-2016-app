@@ -8,7 +8,7 @@ butto.onclick= function(){
    // counter=counter+1;
     //
    request.onreadystatechange= function(){
-    if(request.readystatechange==XMLHttpRequest.DONE)
+    if(request.readystate==XMLHttpRequest.DONE)
     {if(request.status==200)
     {
      var counter= request.responseText;
